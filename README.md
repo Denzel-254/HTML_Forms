@@ -37,9 +37,9 @@ Form Sections include:
 * Labels are connected to inputs using the for and id attributes for screen-reader support.
 
 ## 📂 Project Structure
-├── index.html  Main HTML file (entry point of the website)
-├── LICENSE  License information for this project
-└── README.md  Project documentation
+* ├── index.html  Main HTML file.
+* ├── LICENSE  License information for this project.
+* └── README.md  Project documentation.
 
 ## 🚀 How to Use  the Form
 
