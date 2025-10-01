@@ -32,9 +32,14 @@ Form Sections include:
 
 ## 🛠️ Implementation Notes
 
-* Each form uses semantic HTML elements like <form>, <fieldset>, <legend>, and <label> for better accessibility.
+* Each form uses semantic HTML elements like (form), (fieldset), (legend), and (label) for better accessibility.
 * Input types are chosen based on the kind of data (e.g., type="email" for emails, type="password" for passwords).
 * Labels are connected to inputs using the for and id attributes for screen-reader support.
+
+## 📂 Project Structure
+* ├── index.html  Main HTML file.
+* ├── LICENSE  License information for this project.
+* └── README.md  Project documentation.
 
 ## 🚀 How to Use  the Form
 
