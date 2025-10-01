@@ -5,226 +5,299 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Forms</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <main>
-        <h1><strong>User Registration Form</strong> </h1> <br>
 
-        <form action="">
+        <div class="container">
+            <h1><strong>User Registration Form</strong> </h1> <br>
 
-            <fieldset>
+            <form action="">
 
-                <legend>Personal Information</legend>
+                <fieldset>
 
-                <label for="FirstName">First Name : </label>
-                <input type="text" name="FiirstName" id="FirstName">
+                    <legend>Personal Information</legend>
 
-                <br><br>
+                    <div class="input_group">
 
-                <label for="LaststName">Last Name : </label>
-                <input type="text" name="LastName" id="LaststName">
+                        <label for="FirstName">First Name </label>
+                        <input type="text" name="FiirstName" id="FirstName" required>
 
-                <br><br>
+                    </div>
 
-                <label for="dateofbirth">Date of Birth : </label>
-                <input type="date" name="dateofbirth" id="dateofbirth">
+                    <br>
 
-                <br><br>
+                    <div class="input_group">
+                        <label for="LaststName">Last Name </label>
+                        <input type="text" name="LastName" id="LaststName" required>
 
-                <label for="age"> Age : </label>
-                <input type="number" name="age" id="age">
+                    </div>
 
-                <br><br>
+                    <br>
 
-                <label for="age"> Gender : </label>
-                <input type="radio" name="Gender" value="Male" id="age">Male
-                <input type="radio" name="Gender" value="Female" id="age">Female
+                    <div class="input_group">
+                        <label for="dateofbirth">Date of Birth </label>
+                        <input type="date" name="dateofbirth" id="dateofbirth" required>
+                    </div>
 
-                <br><br>
+                    <br>
 
-                <label for="file"> Profile Photo : </label>
-                <input type="file" name="file" id="file">
+                    <div class="input_group">
+                        <label for="age"> Age </label>
+                        <input type="number" name="age" id="age" required>
+                    </div>
 
-            </fieldset>
+                    <br>
 
-            <br>
+                    <div class="input_group">
+                        <label for="age"> Gender </label>
+                        <input type="radio" name="Gender" value="Male" id="age" required>Male
+                        <input type="radio" name="Gender" value="Female" id="age" required>Female
+                    </div>
 
-            <fieldset>
+                    <br>
 
-                <legend>Contact & Address Information</legend>
+                    <div class="input_group">
+                        <label for="file"> Profile Photo </label>
+                        <input type="file" name="file" id="file">
+                    </div>
 
-                <label for="email">Email Adress :</label>
-                <input type="text" name="emailaddress" id="email">
+                </fieldset>
 
-                <br><br>
+                <br>
 
-                <label for="phonenumber">Phone Number :</label>
-                <input type="tel" name="phonenumber" id="phonenumber">
+                <fieldset>
 
-                <br><br>
+                    <legend>Contact & Address Information</legend>
 
-                <label for="personalwebsite">Personal Website : </label>
-                <input type="url" name="personalwebsite" id="personalwebsite" placeholder="https://example.com">
+                    <div class="input_group">
+                        <label for="email">Email Adress </label>
+                        <input type="text" name="emailaddress" id="email" required>
+                    </div>
 
-                <br><br>
+                    <br>
 
-                <label for="streetaddress">Street Address :</label>
-                <input type="text" name="streetaddress" id="streetaddress">
+                    <div class="input_group">
+                        <label for="phonenumber">Phone Number </label>
+                        <input type="tel" name="phonenumber" id="phonenumber" required>
+                    </div>
 
-                <br><br>
+                    <br>
 
-                <label for="city">City :</label>
-                <input type="text" name="city" id="city">
+                    <div class="input_group">
+                        <label for="personalwebsite">Personal Website </label>
+                        <input type="url" name="personalwebsite" id="personalwebsite" placeholder="https://example.com">
+                    </div>
 
-                <br><br>
+                    <br>
 
-                <label for="country">Country :</label>
-                <select name="country" id="country">
+                    <div class="input_group">
+                        <label for="streetaddress">Street Address </label>
+                        <input type="text" name="streetaddress" id="streetaddress" required>
+                    </div>
 
-                    <option value="Ke">Select Country</option>
-                    <option value="Ke">Kenya</option>
-                    <option value="Ug">Uganda</option>
-                    <option value="Tz">Tanzania</option>
+                    <br>
 
-                </select>
+                    <div class="input_group">
+                        <label for="city">City </label>
+                        <input type="text" name="city" id="city" required>
+                    </div>
 
-                <br><br>
+                    <br>
 
-                <label for="postalcode">ZIP/Postal Code :</label>
-                <input type="text" name="postalcode" id="postalcode">
+                    <div class="input_group">
+                        <label for="country">Country </label>
+                        <select name="country" id="country" required>
 
-                <br><br>
+                            <option value="Ke">Select Country</option>
+                            <option value="Ke">Kenya</option>
+                            <option value="Ug">Uganda</option>
+                            <option value="Tz">Tanzania</option>
 
-                <label for="contacttime">Preffered Contact Time :</label>
-                <input type="time" name="contacttime" id="contacttime">
+                        </select>
+                    </div>
 
-            </fieldset>
+                    <br>
 
-            <br>
+                    <div class="input_group">
+                        <label for="postalcode">ZIP/Postal Code </label>
+                        <input type="text" name="postalcode" id="postalcode" required>
+                    </div>
 
-            <fieldset>
+                    <br>
 
-                <legend>Preferences & Interests</legend>
+                    <div class="input_group">
+                        <label for="contacttime">Preffered Contact Time </label>
+                        <input type="time" name="contacttime" id="contacttime">
+                    </div>
 
-                <label for="favcolor">Favorite Color :</label>
-                <input type="color" name="favcolor" id="favcolor">
+                </fieldset>
 
-                <br><br>
+                <br>
 
-                <label for="experiencelevel">Experience Level(1-10)</label>
-                <input type="range" name="experiencelevel" id="experiencelevel">
+                <fieldset>
 
-                <br><br>
+                    <legend>Preferences & Interests</legend>
 
-                <label for="birthmonth">Birth Month :</label>
-                <input type="month" name="birthmonth" id="birthmonth">
+                    <div class="input_group">
+                        <label for="favcolor">Favorite Color </label>
+                        <input type="color" name="favcolor" id="favcolor">
+                    </div>
 
-                <br><br>
+                    <br>
 
-                <label for="availableweek">Available Week :</label>
-                <input type="week" name="availableweek" id="availableweek">
+                    <div class="input_group">
+                        <label for="experiencelevel">Experience Level(1-10)</label>
+                        <input type="range" name="experiencelevel" id="experiencelevel" required>
+                    </div>
 
-                <br><br>
+                    <br>
 
-                <label for="searchkeywords"> Search Keywords :</label>
-                <input type="text" name="searchkeywords" id="searchkeywords" placeholder="Enter Keywords...">
+                    <div class="input_group">
+                        <label for="birthmonth">Birth Month </label>
+                        <input type="month" name="birthmonth" id="birthmonth" required>
+                    </div>
 
-                <br><br>
+                    <br>
 
-                <label for="Interests">Interests (select all that apply) :</label> <br>
-                <input type="checkbox" name="Interests" value="Tech" id="Interests">Technology <br>
-                <input type="checkbox" name="Interests" value="Sportsr" id="Interests">Sports <br>
-                <input type="checkbox" name="Interests" value="Music" id="Interests">Music <br>
-                <input type="checkbox" name="Interests" value="Travel" id="Interests">Travel <br>
-                <input type="checkbox" name="Interests" value="Reading" id="Interests">Reading <br>
-                <input type="checkbox" name="Interests" value="Cooking" id="Interests">Cooking
+                    <div class="input_group">
+                        <label for="availableweek">Available Week </label>
+                        <input type="week" name="availableweek" id="availableweek">
+                    </div>
 
-                <br><br>
+                    <br>
 
-                <label for="educationlevel">Education Level :</label>
+                    <div class="input_group">
+                        <label for="searchkeywords"> Search Keywords </label>
+                        <input type="text" name="searchkeywords" id="searchkeywords" placeholder="Enter Keywords...">
+                    </div>
 
-                <select name="educationlevel" id="educationlevel">
-                    <option value="">Select Education Level</option>
-                    <option value="TL">Tertiary Level</option>
-                    <option value="SL">Secondary Level</option>
-                    <option value="PL">Primary Level</option>
-                </select>
+                    <br>
 
-                <br><br>
+                    <div class="input_group check_box">
+                        <label for="Interests">Interests (select all that apply) </label> <br>
+                        <input type="checkbox" name="Interests" value="Tech" id="Interests">Technology <br>
+                        <input type="checkbox" name="Interests" value="Sportsr" id="Interests">Sports <br>
+                        <input type="checkbox" name="Interests" value="Music" id="Interests">Music <br>
+                        <input type="checkbox" name="Interests" value="Travel" id="Interests">Travel <br>
+                        <input type="checkbox" name="Interests" value="Reading" id="Interests">Reading <br>
+                        <input type="checkbox" name="Interests" value="Cooking" id="Interests">Cooking
+                    </div>
 
-                <label for="createpass">Create Password :</label>
-                <input type="password" name="createpass" id="createpass">
+                    <br>
 
-                <br><br>
+                    <div class="input_group">
+                        <label for="educationlevel">Education Level </label>
 
-                <label for="confirmepass">Confirm Password :</label>
-                <input type="password" name="confirmepass" id="confirmepass">
+                        <select name="educationlevel" id="educationlevel" required>
+                            <option value="">Select Education Level</option>
+                            <option value="TL">Tertiary Level</option>
+                            <option value="SL">Secondary Level</option>
+                            <option value="PL">Primary Level</option>
+                        </select>
+                    </div>
 
-            </fieldset>
+                    <br>
 
-            <br>
+                    <div class="input_group">
+                        <label for="createpass">Create Password </label>
+                        <input type="password" name="createpass" id="createpass" required>
+                    </div>
 
-            <fieldset>
+                    <br>
 
-                <legend>Feedback & Additional Information</legend>
+                    <div class="input_group">
+                        <label for="confirmepass">Confirm Password </label>
+                        <input type="password" name="confirmepass" id="confirmepass" required>
+                    </div>
 
-                <label for="tellusabtyourself">Tell Us about Yourself :</label> <br>
-                <textarea name="tellusabtyourself" id="tellusabtyourself" rows="6" cols="50">Write a brief description about yourself...
+                </fieldset>
 
-                </textarea>
+                <br>
 
-                <br><br>
+                <fieldset>
 
-                <label for="suggestions">Suggestions for improvement :</label> <br>
-                <textarea name="tellusabtyourself" id="tellusabtyourself" rows="6" cols="50">Any suggestions or feedback... 
+                    <legend>Feedback & Additional Information</legend>
+
+                    <div class="input_group">
+                        <label for="tellusabtyourself">Tell Us about Yourself </label> <br>
+                        <textarea name="tellusabtyourself" id="tellusabtyourself" rows="6" cols="50">Write a brief description about yourself...
+
+                        </textarea>
+                    </div>
+
+                    <br>
+
+                    <div class="input_group">
+                        <label for="suggestions">Suggestions for improvement </label> <br>
+                        <textarea name="tellusabtyourself" id="tellusabtyourself" rows="6" cols="50">Any suggestions or feedback... 
                 
-                </textarea>
+                        </textarea>
+                    </div>
 
-                <br><br>
+                    <br>
 
-                <label for="regdateandtime">Registration Date and Time :</label>
-                <input type="datetime-local" name="regdateandtime" id="regdateandtime">
+                    <div class="input_group">
+                        <label for="regdateandtime">Registration Date and Time </label>
+                        <input type="datetime-local" name="regdateandtime" id="regdateandtime">
+                    </div>
 
-                <br><br>
+                    <br>
 
-                <label for="howdidyouhearabtus">How did you hear about us ?</label>
-                <select name="howdidyouhearabtus" id="howdidyouhearabtus">
+                    <div class="input_group">
+                        <label for="howdidyouhearabtus">How did you hear about us ?</label>
+                        <select name="howdidyouhearabtus" id="howdidyouhearabtus">
 
-                    <option value="ss">Select Source</option>
-                    <option value="website">Our Website</option>
-                    <option value="friend">A Friend</option>
-                    <option value="online">Online</option>
+                            <option value="ss">Select Source</option>
+                            <option value="website">Our Website</option>
+                            <option value="friend">A Friend</option>
+                            <option value="online">Online</option>
 
-                </select>
+                        </select>
+                    </div>
 
-                <br><br>
+                    <br>
 
-                <label for="file">Upload Resume (Optional) :</label>
-                <input type="file" name="file" id="file">
+                    <div class="input_group">
+                        <label for="file">Upload Resume (Optional) </label>
+                        <input type="file" name="file" id="file">
+                    </div>
 
-                <br><br>
+                    <br>
 
-                <label for="conditions">
+                    <div class="input_group check_box">
+                        <label for="conditions">
 
-                    <input type="checkbox" name="subscribe" id="conditions"> Subscribe to our newsletter. <br>
-                    <input type="checkbox" name="agreeterms" id="conditions"> I agree to the terms and conditions. <br>
-                    <input type="checkbox" name="agreepolicy" id="conditions"> I agree to the privacy policy.
+                            <input type="checkbox" name="subscribe" id="conditions" required> Subscribe to our
+                            newsletter. <br>
+                            <input type="checkbox" name="agreeterms" id="conditions" required> I agree to the terms and
+                            conditions.
+                            <br>
+                            <input type="checkbox" name="agreepolicy" id="conditions" required> I agree to the privacy
+                            policy.
 
-                </label>
+                        </label>
+                    </div>
 
-                <br><br><br>
+                    <br><br>
+                    <div class="btn">
+                        <div class="input_group">
+                            <label for="register"></label>
+                            <input type="submit" value="Register">
+                        </div>
 
-                <label for="register"></label>
-                <input type="button" value="Register">
+                        <div class="input_group ">
+                            <label for="clearform"></label>
+                            <input type="reset" value="Clear Form">
+                        </div>
+                    </div>
 
-                <label for="clearform"></label>
-                <input type="reset" value="Clear Form">
+                </fieldset>
 
-
-            </fieldset>
-
-        </form>
+            </form>
+        </div>
 
     </main>
 
