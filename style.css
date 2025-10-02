@@ -1,3 +1,4 @@
+/* Storing colors in varriables */
 :root {
 
     /* Primary colors */
@@ -27,6 +28,7 @@
 
 }
 
+/* Applying reset css */
 
 * {
     padding: 0;
@@ -34,8 +36,13 @@
     box-sizing: border-box;
 }
 
+body {
+    background: linear-gradient(135deg, #f0f4f8, #ffffff);
+}
 
 
+
+/* Styling the form container to center the form */
 .container {
     display: flex;
     flex-direction: column;
@@ -51,6 +58,8 @@
     font-weight: bolder;
 }
 
+/* Fieldset styling */
+
 fieldset {
     padding: 30px;
     margin-bottom: 20px;
@@ -61,16 +70,22 @@ fieldset {
 
 }
 
+/* Legend  styling */
+
 legend {
     font-weight: bold;
     color: var(--primary-dark);
     font-size: 20px;
 }
 
+/* Label styling for all the inputs */
+
 label {
     color: var(--primary-dark);
 
 }
+
+/* Input styling */
 
 input:not([type="radio"], [type="checkbox"], [type="color"], [type="file"]) {
     width: 100%;
@@ -82,10 +97,15 @@ input:not([type="radio"], [type="checkbox"], [type="color"], [type="file"]) {
 
 }
 
+
+/* Styling inputs apart from the checkbox,color,radio and file */
+
 input:not([type="radio"], [type="checkbox"], [type="color"], [type="file"]):focus {
     outline: 2px solid var(--primary-dark);
 
 }
+
+/* Applying hover effect for the inputs styled above*/
 
 input:not([type="radio"], [type="checkbox"], [type="color"], [type="file"]):hover {
     background-color: var(--primary-light);
@@ -100,10 +120,14 @@ input:not([type="radio"], [type="checkbox"], [type="color"], [type="file"]):hove
 
 }
 
+
+/* Styling all the placeholders  */
 input::placeholder {
     color: black;
 }
 
+
+/* styling all the input fields with the required attribute */
 input:required:invalid {
     border: 2px solid var(--error);
     background-color: #ffe6e6;
@@ -172,6 +196,8 @@ input[type="file"]::-webkit-file-upload-button:hover {
     font-weight: bold;
 }
 
+/* Button styling */
+
 input:is([type="submit"], [type="reset"]) {
     padding: 10px 20px;
     border-radius: 5px;
@@ -187,6 +213,8 @@ input:is([type="reset"]) {
 
 }
 
+
+/* Hover effects for the buttons */
 input:is([type="reset"]):hover {
     border: 2px solid blue;
     background-color: transparent;
@@ -206,12 +234,16 @@ input:is([type="submit"]):hover {
     cursor: pointer;
 }
 
+/* Text area styling */
+
 textarea {
     padding: 10px 20px;
     margin-top: 10px;
     border-radius: 10px;
     color: var(--primary-dark);
 }
+
+/* Applying focus style on the text area */
 
 textarea:focus {
     box-shadow: 0 .3rem .3rem grey;
