@@ -10,9 +10,6 @@
 
     --background: #f9fafb;
     --white: #ffffff;
-    --text-dark: #1f2937;
-    --text-light: #6b7280;
-    --border: #d1d5db;
     --border-focus: #2563eb;
 
     /* status colors */
@@ -23,7 +20,6 @@
 
     /* Accent colors */
     --primary-light: #3b82f6;
-
 
 
 }
@@ -74,14 +70,17 @@ fieldset {
 
 legend {
     font-weight: bold;
-    color: var(--primary-dark);
+    color: var(--white);
     font-size: 20px;
+    background-color: var(--primary-dark);
+    padding: 5px 15px;
+    border-radius: 8px;
 }
 
 /* Label styling for all the inputs */
 
 label {
-    color: var(--primary-dark);
+    color: black;
 
 }
 
@@ -138,6 +137,8 @@ input:required:valid {
     background-color: #e6ffe6;
 }
 
+/* Styling the select input */
+
 select {
     margin-left: 60px;
     padding: 7px 10px;
@@ -158,23 +159,42 @@ option {
 
 }
 
+
+/* Styling input type radio,color,checkbox and file */
+
 input[type="radio"] {
     accent-color: var(--primary-light);
     margin-left: 20px;
     margin-right: 10px;
 }
 
+input[type="radio"]:focus {
+    outline: 3px solid var(--primary-dark);
+
+}
+
 input[type="color"] {
-    border: none;
+    border: 2px solid var(--primary-dark);
+    border-radius: 5px;
     width: 100px;
     height: 30px;
     margin-left: 50px;
+    cursor: pointer;
+}
+
+input[type="color"]:focus {
+    outline: 2px solid var(--primary-dark);
 }
 
 input[type="checkbox"] {
     accent-color: var(--primary-dark);
     margin-right: 15px;
     margin-top: 10px;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:focus {
+    outline: 3px solid var(--primary-dark);
 }
 
 input[type="file"]::-webkit-file-upload-button {
@@ -187,6 +207,8 @@ input[type="file"]::-webkit-file-upload-button {
     border: none;
     cursor: pointer;
 }
+
+
 
 input[type="file"]::-webkit-file-upload-button:hover {
     border: 1px solid var(--primary-light);
@@ -216,12 +238,11 @@ input:is([type="reset"]) {
 
 /* Hover effects for the buttons */
 input:is([type="reset"]):hover {
-    border: 2px solid blue;
-    background-color: transparent;
-    color: blue;
+    background-color: blue;
+    color: var(--white);
+    transition: .3s ease;
     box-shadow: 0 .1rem .1rem gray;
     cursor: pointer;
-    transition: .3s ease;
 
 }
 
