@@ -60,8 +60,13 @@ This project uses a modular CSS approach with CSS custom properties (variables) 
 
 #### Form Validation Styles
 * Visual feedback for required fields (:required:valid and :required:invalid)
-* Success states with green borders and background
-* Error states with red borders and background
+
+  
+### Error states with red borders and background
+![invalid](https://github.com/user-attachments/assets/244dad91-69fb-4680-be30-1926f767f8b5)
+
+### Success states with green borders and background
+![valid](https://github.com/user-attachments/assets/c889731d-3efa-4609-a6e5-5eb8e8d4193f)
 
 #### Interactive States
 * Hover effects on form inputs and buttons
